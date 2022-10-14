@@ -202,7 +202,10 @@ button:active {
 	<button onclick='ascend()' id='ascend'>ASCEND</button>
 	<h3>Ascend to the Top of Pyramid</h3>
 	Migrate your SCARAB, GSCARAB & SINSPIRIT tokens to unleash a stream of ELITE tokens to your wallet.
-
+	<br><br>
+	<img height="24px" src="https://ftm.guru/icons/scarab.png"> <span id="b_s">0.00</span>
+	<img height="24px" src="https://ftm.guru/icons/gscarab.png"> <span id="b_s">0.00</span>
+	<img height="24px" src="https://ftm.guru/icons/sinspirit.png"> <span id="b_i">0.00</span>
 	<br><br><br><br>
 
 	<button onclick='claim()'>Claim ELITE</button>
@@ -371,7 +374,7 @@ async function cw2()
 	$("cw_m").innerHTML=""
 	$("connect").style.display="none";
 	$("switch").style.display="block";
-	farm_1_f_chappro()
+	//farm_1_f_chappro()
 	gubs();
 	return(1);
 }
@@ -391,13 +394,30 @@ function fornum2(n,d)
 function arf(){
 	var xfr = setInterval(
 		function() {
-			return
-			console.log("refreshing farm stats", Date.now());
+			//return
+			console.log("refreshing  stats", Date.now());
 			gubs()
-			DrefreshFarm()
+			//DrefreshFarm()
 		},
 		30000
 	);
+}
+
+async function gubs() {
+
+	S = new ethers.Contract(tS,ab1,signer);
+	G = new ethers.Contract(tG,ab1,signer);
+	I = new ethers.Contract(tI,ab1,signer);
+	b = await Promise.all([
+		S.balanceOf(window.ethereum.selectedAddress),		//	0
+		G.balanceOf(window.ethereum.selectedAddress),		//	1
+		I.balanceOf(window.ethereum.selectedAddress),		//	2
+	]);
+
+	$("b_s").innerHTML = fornum2(b[0],18);
+	$("b_g").innerHTML = fornum2(b[1],18);
+	$("b_i").innerHTML = fornum2(b[2],18);
+
 }
 
 abbrove=[{"constant": false,"inputs": [{"internalType": "address","name": "spender","type": "address"},{"internalType": "uint256","name": "value","type": "uint256"}],"name": "approve","outputs": [{"internalType": "bool","name": "","type": "bool"}],"payable": false,"stateMutability": "nonpayable","type": "function"},{"constant": true,"inputs": [{"internalType": "address","name": "","type": "address"},{"internalType": "address","name": "","type": "address"}],"name": "allowance","outputs": [{"internalType": "uint256","name": "","type": "uint256"}],"payable": false,"stateMutability": "view","type": "function"}];
@@ -439,6 +459,19 @@ async function ascend() {
 	asc = await as.wait();
 
 	alert("Ascension complete. Visit Llamapay to claim ELITE.");
+}
+
+async function claim() {
+	window.location =
+		"https://llamapay.io/veting/Fantom/"
+		+ typeof window.ethereum == "undefined"
+			? ""
+			: window.ethereum.selectedAddress == null
+				? ""
+				: window.ethereum.selectedAddress
+			;
+		;
+	;
 }
 </script>
 
