@@ -202,10 +202,12 @@ button:active {
 	<button onclick='ascend()' id='ascend'>ASCEND</button>
 	<h3>Ascend to the Top of Pyramid</h3>
 	Migrate your SCARAB, GSCARAB & SINSPIRIT tokens to unleash a stream of ELITE tokens to your wallet.
-	<br><br>
-	<img height="24px" src="https://ftm.guru/icons/scarab.png"> <span id="b_s">0.00</span>
-	<img height="24px" src="https://ftm.guru/icons/gscarab.png"> <span id="b_s">0.00</span>
-	<img height="24px" src="https://ftm.guru/icons/sinspirit.png"> <span id="b_i">0.00</span>
+	<br>
+	<div style="font-size:1.25em">
+		<img height="24px" src="https://ftm.guru/icons/scarab.png"> <span id="b_s">0.00</span>
+		<img height="24px" src="https://ftm.guru/icons/gscarab.png"> <span id="b_g">0.00</span>
+		<img height="24px" src="https://ftm.guru/icons/sinspirit.png"> <span id="b_i">0.00</span>
+	</div>
 	<br><br><br><br>
 
 	<button onclick='claim()'>Claim ELITE</button>
@@ -262,8 +264,8 @@ async function basetrip()
 {
 //if(window.ethereum&&Number(window.ethereum.chainId)==250){web3 = new Web3(web3.currentProvider);if(!(window.ethereum.selectedAddress==null)){cw()}}
 
-	if(!(window.ethereum)){$("cw_m").innerHTML = "Wallet wasn't detected!";console.log("Wallet wasn't detected!");provider = new ethers.providers.JsonRpcProvider(RPC_URL);DrefreshFarm();pantvl();return}
-	else if(!Number(window.ethereum.chainId)==CHAINID){$("cw_m").innerHTML = "Wrong network! Please Switch to "+CHAINID;provider = new ethers.providers.Web3Provider(window.ethereum);DrefreshFarm();pantvl();return}
+	if(!(window.ethereum)){$("cw_m").innerHTML = "Wallet wasn't detected!";console.log("Wallet wasn't detected!");provider = new ethers.providers.JsonRpcProvider(RPC_URL);/*DrefreshFarm();pantvl();*/return}
+	else if(!Number(window.ethereum.chainId)==CHAINID){$("cw_m").innerHTML = "Wrong network! Please Switch to "+CHAINID;provider = new ethers.providers.Web3Provider(window.ethereum);/*DrefreshFarm();pantvl()*/;return}
 	else if(//typeOf window.ethereum == Object &&Number(window.ethereum.chainId)
 		Number(window.ethereum.chainId)==CHAINID)
 	{
@@ -280,8 +282,8 @@ async function basetrip()
 		signer = provider.getSigner()
 		$("connect").innerHTML=`Wallet not found.<br><br><button onclick="window.location.reload()" id="btn-connect">Retry?</button>`;
 	}
-	DrefreshFarm()
-	pantvl()
+	//DrefreshFarm()
+	//pantvl()
 	arf()
 }
 async function pantvl()
