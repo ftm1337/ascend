@@ -471,14 +471,9 @@ async function ascend() {
 
 async function claim() {
 	window.location =
-		"https://llamapay.io/veting/Fantom/"
-		+ typeof window.ethereum == "undefined"
-			? ""
-			: window.ethereum.selectedAddress == null
-				? ""
-				: window.ethereum.selectedAddress
-			;
-		;
+		typeof window.ethereum == "undefined"
+		? "https://llamapay.io/vesting/Fantom/" + tM
+		: "https://llamapay.io/vesting/Fantom/"+ window.ethereum.selectedAddress
 	;
 }
 </script>
