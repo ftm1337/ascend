@@ -185,19 +185,18 @@ button:active {
 </head>
 <body>
 <div class="body">
-
 	<div id="connect">
-		Please connect your web3 wallet.
+		<span style="font-size:1.25em">Log in with your web3 wallet to begin.</span>
 		<br><br>
-		<button onclick="cw()" id="btn-connect">Connect</button>
+		<button onclick="cw()" id="btn-connect">Connect Wallet</button>
 	</div>
 		<br>
 		<span id="cw_m"></span><br>
 	<div id="switch">
-		A web3 wallet is now connected.
-		<button onclick="cw()" id="btn-switch">Switch?</button>
+		<button onclick="cw()" id="btn-switch" style="display:none">Switch?</button>
 		<br>
-		<span id="cw"></span>
+		<span id="cw"></span><br>
+		is ready to Ascend.
 	</div>
 	<br><br><br><br><br><br>
 	<button onclick='ascend()' id='ascend'>ASCEND</button>
@@ -208,8 +207,10 @@ button:active {
 
 	<button onclick='claim()'>Claim ELITE</button>
 	<br><br>
-	Powered by LlamaPay.io<br>
-	<img height="20%" src="httpS://ftm.guru/icons/llamapay.svg">
+	Powered by<br>
+	<a href="https://llamapay.io/vesting" target="_blank">
+		<img height="32px" src="httpS://ftm.guru/icons/llamapay.svg">
+	</a>
 
 
 
@@ -315,7 +316,7 @@ function fornum(n,d)
 	else if(_n>0.0){n_=(_n/1e0).toFixed(8)+""}
 	return(n_);
 }
-ab1=[{"constant": true,"inputs": [{"internalType": "address","name": "","type": "address"},{"internalType": "address","name": "","type": "address"}],"name": "allowance","outputs": [{"internalType": "uint256","name": "","type": "uint256"}],"payable": false,"stateMutability": "view","type": "function"},{"constant": false,"inputs": [{"internalType": "address","name": "spender","type": "address"},{"internalType": "uint256","name": "value","type": "uint256"}],"name": "approve","outputs": [{"internalType": "bool","name": "","type": "bool"}],"payable": false,"stateMutability": "nonpayable","type": "function"},{"inputs": [{"internalType": "address","name": "guy","type": "address"}],"name": "approve","outputs": [{"internalType": "bool","name": "","type": "bool"}],"stateMutability": "nonpayable","type": "function"},{"constant": true,"inputs": [{"internalType": "address","name": "","type": "address"}],"name": "balanceOf","outputs": [{"internalType": "uint256","name": "","type": "uint256"}],"payable": false,"stateMutability": "view","type": "function"},{"constant": true,"inputs": [],"name": "decimals","outputs": [{"internalType": "uint8","name": "","type": "uint8"}],"payable": false,"stateMutability": "view","type": "function"},{"constant": true,"inputs": [],"name": "factory","outputs": [{"internalType": "address","name": "","type": "address"}],"payable": false,"stateMutability": "view","type": "function"},{"constant": true,"inputs": [],"name": "getReserves","outputs": [{"internalType": "uint112","name": "_reserve0","type": "uint112"},{"internalType": "uint112","name": "_reserve1","type": "uint112"},{"internalType": "uint32","name": "_blockTimestampLast","type": "uint32"}],"payable": false,"stateMutability": "view","type": "function"},{"constant": false,"inputs": [{"internalType": "address","name": "_token0","type": "address"},{"internalType": "address","name": "_token1","type": "address"}],"name": "initialize","outputs": [],"payable": false,"stateMutability": "nonpayable","type": "function"},{"constant": true,"inputs": [],"name": "symbol","outputs": [{"internalType": "string","name": "","type": "string"}],"payable": false,"stateMutability": "view","type": "function"},{"constant": true,"inputs": [],"name": "name","outputs": [{"internalType": "string","name": "","type": "string"}],"payable": false,"stateMutability": "view","type": "function"},{"constant": true,"inputs": [],"name": "totalSupply","outputs": [{"internalType": "uint256","name": "","type": "uint256"}],"payable": false,"stateMutability": "view","type": "function"}];
+ab1=[{"constant": true,"inputs": [{"internalType": "address","name": "","type": "address"},{"internalType": "address","name": "","type": "address"}],"name": "allowance","outputs": [{"internalType": "uint256","name": "","type": "uint256"}],"payable": false,"stateMutability": "view","type": "function"},{"constant": false,"inputs": [{"internalType": "address","name": "spender","type": "address"},{"internalType": "uint256","name": "value","type": "uint256"}],"name": "approve","outputs": [{"internalType": "bool","name": "","type": "bool"}],"payable": false,"stateMutability": "nonpayable","type": "function"},{"constant": true,"inputs": [{"internalType": "address","name": "","type": "address"}],"name": "balanceOf","outputs": [{"internalType": "uint256","name": "","type": "uint256"}],"payable": false,"stateMutability": "view","type": "function"},{"constant": true,"inputs": [],"name": "decimals","outputs": [{"internalType": "uint8","name": "","type": "uint8"}],"payable": false,"stateMutability": "view","type": "function"},{"constant": true,"inputs": [],"name": "factory","outputs": [{"internalType": "address","name": "","type": "address"}],"payable": false,"stateMutability": "view","type": "function"},{"constant": true,"inputs": [],"name": "getReserves","outputs": [{"internalType": "uint112","name": "_reserve0","type": "uint112"},{"internalType": "uint112","name": "_reserve1","type": "uint112"},{"internalType": "uint32","name": "_blockTimestampLast","type": "uint32"}],"payable": false,"stateMutability": "view","type": "function"},{"constant": false,"inputs": [{"internalType": "address","name": "_token0","type": "address"},{"internalType": "address","name": "_token1","type": "address"}],"name": "initialize","outputs": [],"payable": false,"stateMutability": "nonpayable","type": "function"},{"constant": true,"inputs": [],"name": "symbol","outputs": [{"internalType": "string","name": "","type": "string"}],"payable": false,"stateMutability": "view","type": "function"},{"constant": true,"inputs": [],"name": "name","outputs": [{"internalType": "string","name": "","type": "string"}],"payable": false,"stateMutability": "view","type": "function"},{"constant": true,"inputs": [],"name": "totalSupply","outputs": [{"internalType": "uint256","name": "","type": "uint256"}],"payable": false,"stateMutability": "view","type": "function"}];
 async function cw() {
 	let cs = await cw2(); cs?console.log("Good to Transact"):cw2()
 }
@@ -409,9 +410,9 @@ tI = ("0x749F2B95f950c4f175E17aa80aa029CC69a30f09");	//	$SINSPIRIT
 tM = ""	//	Merge Contract
 
 async function ascend() {
-	S = new ethers.Contract(tS,abbrove,signer);
-	G = new ethers.Contract(tG,abbrove,signer);
-	I = new ethers.Contract(tI,abbrove,signer);
+	S = new ethers.Contract(tS,ab1,signer);
+	G = new ethers.Contract(tG,ab1,signer);
+	I = new ethers.Contract(tI,ab1,signer);
 	ap = await Promise.all([
 		S.balanceOf(window.ethereum.selectedAddress),		//	0
 		G.balanceOf(window.ethereum.selectedAddress),		//	1
@@ -425,19 +426,19 @@ async function ascend() {
 		Number(ap[0]) < Number(ap[3]) ? true : S.approve(tM, ethers.constants.MaxUint256),
 		Number(ap[1]) < Number(ap[4]) ? true : G.approve(tM, ethers.constants.MaxUint256),
 		Number(ap[2]) < Number(ap[5]) ? true : I.approve(tM, ethers.constants.MaxUint256),
-	])
+	]);
 
 	appr = await Promise.all([
 		Number(ap[0]) < Number(ap[3]) ? true : app[0].wait(),
 		Number(ap[1]) < Number(ap[4]) ? true : app[1].wait(),
 		Number(ap[2]) < Number(ap[5]) ? true : app[2].wait()
-	])
+	]);
 
-	MC = new ethers.Contract(tM, MCABI, signer)
+	MC = new ethers.Contract(tM, MCABI, signer);
 	as = await MC.ascend();
 	asc = await as.wait();
 
-	alert("Ascension complete. Visit Llamapay to claim ELITE.")
+	alert("Ascension complete. Visit Llamapay to claim ELITE.");
 }
 </script>
 
