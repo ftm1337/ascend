@@ -1,0 +1,535 @@
+<!doctype html>
+<html>
+<meta charset="UTF-8">
+<head>
+<meta name="description" content="Ascend your SCARAB, GSCARAB & SINSPIRIT token into ELITE | ascend.ftm.guru">
+<meta name="keywords" content="Ftm.guru, Guru Network, Finance, Decentralized Finance, defi, Scarab, Spirit, SpiritSwap, Gscarab, Egypt, Illuminati, Ascension, Fantom Opera, FTM">
+<title>Ascend your Scarabs | FTM.guru</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="https://ftm.guru/img/64.png"/>
+<link rel="stylesheet" href="g.css">
+<style>
+@font-face{font-family:bold;src: url(https://ftm.guru/font/bold.ttf);}
+@font-face{ font-family:italic;src: url(https://ftm.guru/font/italic.ttf);}
+@font-face{ font-family:light;src: url(https://ftm.guru/font/light.ttf);}
+@font-face{ font-family:light_italic;src: url(https://ftm.guru/font/light_italic.ttf);}
+@font-face{ font-family:regular;src: url(https://ftm.guru/font/regular.ttf);}
+@font-face{ font-family:regular_italic;src: url(https://ftm.guru/font/regular_italic.ttf);}
+*{font-family:regular;}
+*{
+scroll-behavior: smooth !important;
+}
+body {
+  background: #090909;
+  background-image: url("img/pr.png");
+  color: white;
+  background-attachment: fixed;
+  margin:auto;
+  background-size: cover;
+  background-position: 50% 0;
+  text-shadow: 1px 1px 1px black;
+}
+.body{
+  margin: 8%;
+  text-align:center;
+}
+.topbar {
+  background: #000;
+  width: calc(100%-10px);
+  display:flex;
+  flex-wrap: wrap;
+  position:sticky;
+  bottom:0;
+  z-index: 1;
+  border-top: 8px ridge #17082f
+}
+.topbar a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  font-weight: bolder;
+  margin: auto
+}
+.topbar a:first-child{font-size: 2em}
+h1{font-size: 3em}
+h2{}
+h1,h2,h3{color:#32fbe2;}
+button{
+  border:2px solid #fb0;
+  background: #000;
+  color: white;
+  padding: 8px;
+  font-size: 1em;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px #fb1;
+  transition: 0.25s;
+}
+button:hover{
+  transform: translate(2px,-2px);
+  font-size: 1.1em;
+  transition: 0.25s;
+}
+button:active {
+  transform: translate(0px,10px);
+}
+.lowerbar{
+  font-size: 1.25em;
+  font-weight: bolder;
+}
+.lowerbar a{
+  font-size: 0.75em;
+  font-weight: lighter;
+  padding: 10px 10px 10px 0px;
+  color:#32fbe2;
+  text-decoration: none
+}
+.lowerbar img{width:24px}
+.cards{
+  display: flex;
+  flex-wrap: wrap;
+}
+.card{
+  margin:10px 20px 10px 0px;
+  min-width: 220px;
+  padding: 0px 10px 10px 10px;
+  border: 2px solid #1f5;
+  border-radius: 5px;
+  background:rgba(16,240,80,0.2)
+}
+.card hr{color: #1f5;border:solid 2px}
+.card sub{font-size: 1em}
+.card sup{font-size: 1.5em}
+.card:hover{
+  transform: translate(5px,-5px);
+  box-shadow: -5px 5px 5px rgba(16,240,80,0.75);
+  transition: 0.25s;
+  background: rgba(16,240,80,0.1);
+}
+.card span{font-size: 2em}
+.card a{text-decoration: none;color: inherit}
+.ki img {
+  position: relative;
+  top:8px;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  box-shadow: 0 0 2px 2px rgba(16,240,80,1);
+}
+.ki img:first-child{left: 8px}
+.ib {
+  position: relative;
+  top:-24px !important;
+  left:8px !important;
+  width: 22px !important;
+  height:22px !important;
+}
+.iib {
+  position: relative;
+  top:-6px !important;
+  left:-12px !important;
+  width: 22px !important;
+  height:22px !important;
+}
+.panels{
+  display: grid;
+  grid-template-columns: auto;
+}
+#ivst,#switch {
+  display:none;border:none
+}
+.panels div:nth-child(1),.panels div:nth-child(2) {
+  border:4px dashed #ffc107;
+  padding: 0 5% 0;
+  padding: 25px;
+  background: #170229;
+  border-radius: 10px
+}
+.panels div:nth-child(1){
+  margin: 0 15px 15px 0;
+  border-right: none;
+  /*Just on the mobile view*/
+  margin-bottom: 0;
+  border-bottom: none
+}
+.panels div:nth-child(2){
+  margin: 0 0 15px 0;
+  border-left: none;
+}
+.hr1{
+  color: transparent;
+  border: none;
+  border-top: 16px dotted #ea39b8;
+  max-width: 50%
+}
+.fore{color: gold !important;font-weight:400}
+#cw_m{color: #f23;font-weight: bold;text-shadow: 1px 1px 5px rgba(255,127,127,0.5)}
+.inacg td,.inacg td a{color: grey;-webkit-filter: grayscale(100%) brightness(80%);filter: grayscale(100%) brightness(80%);background: #17082f !important;}
+
+
+
+#ascend{font-size: 1.25em}
+
+@media(min-width:641px){
+  .panels{
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  .panels div:nth-child(1){
+  /*Revert the mobile view*/
+  margin: 0 15px 15px 0;
+  border:4px dashed #ffc107;
+  border-right: none;
+  }
+}
+</style>
+</head>
+<body>
+<div class="body">
+	<div id="connect">
+		<span style="font-size:1.25em">Log in with your web3 wallet to begin.</span>
+		<br><br>
+		<button onclick="cw()" id="btn-connect">Connect Wallet</button>
+	</div>
+		<br>
+		<span id="cw_m"></span><br>
+	<div id="switch">
+		<button onclick="cw()" id="btn-switch" style="display:none">Switch?</button>
+		<br>
+		<span id="cw"></span><br>
+		is ready to Ascend.
+	</div>
+	<br><br><br><br><br><br>
+	<h3>Ascend to the Top of Pyramid</h3>
+	<div style="font-family:light; background:rgba(255,255,255,.1); max-width:70%; margin:auto; padding:20px; border-radius:20px; border:solid silver double">
+		<b>Are you a new user?</b>
+		<br>Learn more about the mechanism prior to Ascending into Eliteness.
+		<br>Read our introductory <a href="" target="_blank" style="color:white; font-weight: bolder; text-decoration:none">Medium Article</a> and view our <a href="" target="_blank" style="color:white; font-weight: bolder; text-decoration:none">Floor-price Analytics</a> to guide your actions.
+	</div>
+	<br><br>
+	Migrate your SCARAB, GSCARAB & SINSPIRIT tokens to unleash a stream of ELITE tokens to your wallet.
+	<br><br>
+	<button onclick='ascend()' id='ascend'>ASCEND ALL TOKENS</button>
+	<br><br>
+	- OR -<br>
+	<br>
+	Ascend tokens selectively
+	<br><br>
+	<div style="font-size:1.5em">
+		<img height="24px" src="https://ftm.guru/icons/scarab.png"> <span id="b_s">0.00</span> SCARAB<br>
+		<input id="in_s" placeholder="Amount of Scarab" type="number" step="1"><br><br>
+		<img height="24px" src="https://ftm.guru/icons/gscarab.png" type="number" step="1"> <span id="b_g">0.00</span> GSCARAB<br>
+		<input id="in_s" placeholder="Amount of GScarab" type="number" step="1"><br><br>
+		<img height="24px" src="https://ftm.guru/icons/sinspirit.png"> <span id="b_i">0.00</span> SINSPIRIT<br>
+		<input id="in_s" placeholder="Amount of SinSpirit" type="number" step="1"><br><br>
+	</div>
+
+	<button onclick='ascend_parts()' id='ascend'>ASCEND</button>
+	<br>
+	<br>
+	<br><br><br><br>
+
+	After Ascending Scarab, GScarab or SinSpirit
+	<br><br>
+	<button onclick='claim()' style="font-size:1.25em">Claim ELITE Streams</button>
+	<br><br>
+	Powered by<br>
+	<a href="https://llamapay.io/vesting" target="_blank">
+		<img height="32px" src="httpS://ftm.guru/icons/llamapay.svg">
+	</a>
+
+
+
+
+</div>
+<div class="topbar">
+	<a href="index.html">ELITE 🤝 SCARAB</a>
+	<a href="https://ftm.guru">FTM.guru</a>
+	<a href="https://scarab.finance">Scarab.finance</a>
+
+	<div class="lowerbar">
+	<a target="_blank" href="https://discord.com/invite/QpyfMarNrV"><img src="https://ftm.guru/icons/discord.svg"></a>
+	<a target="_blank" href="https://twitter.com/ftm1337"><img src="https://ftm.guru/icons/twitter.svg"></a>
+	<a target="_blank" href="https://t.me/ftm1337"><img src="https://ftm.guru/icons/telegram.svg"></a>
+	</div>
+	<!--<a href="https://discord.gg/QpyfMarNrV">Join our Discord<a>
+	<!--
+	<a href="">FMC.guru</a>
+	<a href="">Others</a>
+	<a href="">Kompound</a>
+	<a href="">T</a>
+	<a href="">T</a>
+	<a href="">D</a>
+	-->
+</div>
+<script src="../ethers-5.2.umd.min.js" type="application/javascript" defer="true"></script>
+
+
+<script>
+RPC_URL = "https://rpc.ftm.tools"
+CHAINID = 250;
+EXPLORE = "https://ftmscan.com/address/";
+tsca = "0x0786c3a78f5133f08c1c70953b8b10376bc6dcad";
+function $(_) {return document.getElementById(_);}
+let provider= {};
+let signer= {};
+window.addEventListener('load',async function()
+{
+
+	console.log("waitin for 3 secs..");
+	$("cw_m").innerHTML = "Connecting.. Please wait."
+	setTimeout(async () => { basetrip(); }, 3000);
+}, false);
+
+async function basetrip()
+{
+//if(window.ethereum&&Number(window.ethereum.chainId)==250){web3 = new Web3(web3.currentProvider);if(!(window.ethereum.selectedAddress==null)){cw()}}
+
+	if(!(window.ethereum)){$("cw_m").innerHTML = "Wallet wasn't detected!";console.log("Wallet wasn't detected!");provider = new ethers.providers.JsonRpcProvider(RPC_URL);/*DrefreshFarm();pantvl();*/return}
+	else if(!Number(window.ethereum.chainId)==CHAINID){$("cw_m").innerHTML = "Wrong network! Please Switch to "+CHAINID;provider = new ethers.providers.Web3Provider(window.ethereum);/*DrefreshFarm();pantvl()*/;return}
+	else if(//typeOf window.ethereum == Object &&Number(window.ethereum.chainId)
+		Number(window.ethereum.chainId)==CHAINID)
+	{
+		console.log("Recognized Ethereum Chain:", window.ethereum.chainId,CHAINID);
+		provider = new ethers.providers.Web3Provider(window.ethereum)
+		signer = provider.getSigner();
+		if(!(window.ethereum.selectedAddress==null)){console.log("Found old wallet:", window.ethereum.selectedAddress);cw();}
+	}
+	else //if(Number(window.ethereum.chainId)==CHAINID)
+	{
+		console.log("Couldn't find Ethereum Provider - ",CHAINID,window.ethereum.chainId)
+		if((typeof Number(window.ethereum.chainId) == "number")){$("cw_m").innerHTML = "Wrong network! Switch from " + Number(window.ethereum.chainId)+" to "+CHAINID}
+		provider = new ethers.providers.JsonRpcProvider(RPC_URL);
+		signer = provider.getSigner()
+		$("connect").innerHTML=`Wallet not found.<br><br><button onclick="window.location.reload()" id="btn-connect">Retry?</button>`;
+	}
+	//DrefreshFarm()
+	//pantvl()
+	arf()
+}
+async function pantvl()
+{
+	tabi = [{"constant": true,"inputs": [],"name": "tvl","outputs": [{"internalType": "uint256","name": "","type": "uint256"}],"payable": false,"stateMutability": "view","type": "function"}]
+	const tg = new ethers.Contract(tsca,tabi,provider)
+	let r = await tg.tvl()
+	$("pantvl").innerHTML = "$"+(Number(r._hex)/1e18).toLocaleString()
+}/*
+function fornum(n,d)
+{
+	_n=(Number(n)/10**Number(d));
+	n_=_n;
+	if(_n>1e18){n_=(_n/1e18).toFixed(2)+" Qt."}
+	else if(_n>1e15){n_=(_n/1e15).toFixed(2)+" Qd."}
+	else if(_n>1e12){n_=(_n/1e12).toFixed(2)+" Tn."}
+	else if(_n>1e9){n_=(_n/1e9).toFixed(2)+" Bn."}
+	else if(_n>1e6){n_=(_n/1e6).toFixed(2)+" Mn."}
+	else if(_n>1e3){n_=(_n/1e3).toFixed(2)+" Th."}
+	else if(_n>0){n_=(_n/1e0).toFixed(5)+""}
+	return(n_);
+}
+*/
+function fornum(n,d)
+{
+	_n=(Number(n)/10**Number(d));
+	n_=_n;
+	if(_n>1e18){n_=(_n/1e18).toFixed(3)+"Qt"}
+	else if(_n>1e15){n_=(_n/1e15).toFixed(3)+"Qd"}
+	else if(_n>1e12){n_=(_n/1e12).toFixed(3)+"T"}
+	else if(_n>1e9){n_=(_n/1e9).toFixed(3)+"B"}
+	else if(_n>1e6){n_=(_n/1e6).toFixed(3)+"M"}
+	else if(_n>1e3){n_=(_n/1e3).toFixed(3)+"K"}
+	else if(_n>1e1){n_=(_n/1e0).toFixed(5)+""}
+	else if(_n>0.0){n_=(_n/1e0).toFixed(8)+""}
+	return(n_);
+}
+ab1=[{"constant": true,"inputs": [{"internalType": "address","name": "","type": "address"},{"internalType": "address","name": "","type": "address"}],"name": "allowance","outputs": [{"internalType": "uint256","name": "","type": "uint256"}],"payable": false,"stateMutability": "view","type": "function"},{"constant": false,"inputs": [{"internalType": "address","name": "spender","type": "address"},{"internalType": "uint256","name": "value","type": "uint256"}],"name": "approve","outputs": [{"internalType": "bool","name": "","type": "bool"}],"payable": false,"stateMutability": "nonpayable","type": "function"},{"constant": true,"inputs": [{"internalType": "address","name": "","type": "address"}],"name": "balanceOf","outputs": [{"internalType": "uint256","name": "","type": "uint256"}],"payable": false,"stateMutability": "view","type": "function"},{"constant": true,"inputs": [],"name": "decimals","outputs": [{"internalType": "uint8","name": "","type": "uint8"}],"payable": false,"stateMutability": "view","type": "function"},{"constant": true,"inputs": [],"name": "factory","outputs": [{"internalType": "address","name": "","type": "address"}],"payable": false,"stateMutability": "view","type": "function"},{"constant": true,"inputs": [],"name": "getReserves","outputs": [{"internalType": "uint112","name": "_reserve0","type": "uint112"},{"internalType": "uint112","name": "_reserve1","type": "uint112"},{"internalType": "uint32","name": "_blockTimestampLast","type": "uint32"}],"payable": false,"stateMutability": "view","type": "function"},{"constant": false,"inputs": [{"internalType": "address","name": "_token0","type": "address"},{"internalType": "address","name": "_token1","type": "address"}],"name": "initialize","outputs": [],"payable": false,"stateMutability": "nonpayable","type": "function"},{"constant": true,"inputs": [],"name": "symbol","outputs": [{"internalType": "string","name": "","type": "string"}],"payable": false,"stateMutability": "view","type": "function"},{"constant": true,"inputs": [],"name": "name","outputs": [{"internalType": "string","name": "","type": "string"}],"payable": false,"stateMutability": "view","type": "function"},{"constant": true,"inputs": [],"name": "totalSupply","outputs": [{"internalType": "uint256","name": "","type": "uint256"}],"payable": false,"stateMutability": "view","type": "function"}];
+async function cw() {
+	let cs = await cw2();
+	if (cs == 1){ console.log("Good to Transact");$("cw_m").innerHTML=""}
+	else await cw2();
+	cw2()
+}
+async function cw2()
+{
+	if(!(window.ethereum)){$("cw_m").innerHTML="Metamask not detected! Trying a refresh";console.log("Metamask not found!");window.location.reload();return(0)}
+	if(!(Number(window.ethereum.chainId)==CHAINID)){$("cw_m").innerHTML="Wrong network detected! Please switch to chain ID", CHAINID, "and refresh this page.";return(0)}
+	if(typeof provider == "undefined"){$("cw_m").innerHTML="Provider not detected! Trying a refresh";console.log("Provider not found!");window.location.reload();return(0)}
+	/*
+	if(!
+		(isFinite(Number(accounts[0])))
+		|| (isFinite(Number(window.ethereum.selectedAddress)))
+	){console.log("NAAAAAAAAAAAAAAAAA");window.location.reload();}
+	*/
+
+	//004
+	window.ethereum
+	.request({ method: 'eth_requestAccounts' })
+	.then(r=>{console.log("004: Success:",r);$("cw_m").innerHTML="";})	//re-curse to end curse, maybe..
+	.catch((error) => {	console.error("004 - Failure", r, error); });
+
+
+	//005
+	const accounts = await window.ethereum.request({ method: 'eth_accounts' });
+	if(Number(accounts[0])>0){console.log("005: Success - ", accounts)}
+	else{console.log("005: Failure", accounts)}
+
+
+	/*006
+	const en6 = await window.ethereum.enable()
+	if(Number(en6[0]) > 0){console.log("006 - Success",en6)}
+	else{console.log("006 - Failure", en6)}
+	*/
+
+
+	/*003
+	try {
+      console.log("attempting cw()")
+      const addresses = await provider.request({ method: "eth_requestAccounts" });
+      console.log("addresses:",addresses)
+    } catch (e) {
+      console.log("error in request", e);
+      window.location.reload(true);
+    }
+    */
+
+    //002
+    //try{await provider.send("eth_requestAccounts", []);console.log("CWE:",e);}//await window.ethereum.enable();
+	//catch(e){console.log("CWE:",e);window.location.reload(true)}
+	console.log("doing the paints")
+	$("cw").innerHTML= (window.ethereum.selectedAddress).substr(0,10) +"..."+(window.ethereum.selectedAddress).substr(34);
+	$("cw_m").innerHTML=""
+	$("connect").style.display="none";
+	$("switch").style.display="block";
+	//farm_1_f_chappro()
+	gubs();
+
+	return(1);
+}
+function fornum2(n,d)
+{
+	_n=(Number(n)/10**Number(d));
+	n_=_n;
+	if(_n>1e18){n_=(_n/1e18).toFixed(2)+" Quintillion"}
+	else if(_n>1e15){n_=(_n/1e15).toFixed(2)+" Quadrillion"}
+	else if(_n>1e12){n_=(_n/1e12).toFixed(2)+" Trillion"}
+	else if(_n>1e9){n_=(_n/1e9).toFixed(2)+" Billion"}
+	else if(_n>1e6){n_=(_n/1e6).toFixed(2)+" Million"}
+	else if(_n>1e3){n_=(_n/1e3).toFixed(2)+" Thousand"}
+	else if(_n>1){n_=(_n/1e0).toFixed(8)+""}
+	return(n_);
+}
+function arf(){
+	var xfr = setInterval(
+		function() {
+			//return
+			console.log("refreshing  stats", Date.now());
+			gubs()
+			//DrefreshFarm()
+		},
+		30000
+	);
+}
+
+async function gubs() {
+	S = new ethers.Contract(tS,ab1,signer);
+	G = new ethers.Contract(tG,ab1,signer);
+	I = new ethers.Contract(tI,ab1,signer);
+	b = await Promise.all([
+		S.balanceOf(window.ethereum.selectedAddress),		//	0
+		G.balanceOf(window.ethereum.selectedAddress),		//	1
+		I.balanceOf(window.ethereum.selectedAddress),		//	2
+	]);
+
+	$("b_s").innerHTML = fornum(b[0],18);
+	$("b_g").innerHTML = fornum(b[1],18);
+	$("b_i").innerHTML = fornum(b[2],18);
+
+}
+
+abbrove=[{"constant": false,"inputs": [{"internalType": "address","name": "spender","type": "address"},{"internalType": "uint256","name": "value","type": "uint256"}],"name": "approve","outputs": [{"internalType": "bool","name": "","type": "bool"}],"payable": false,"stateMutability": "nonpayable","type": "function"},{"constant": true,"inputs": [{"internalType": "address","name": "","type": "address"},{"internalType": "address","name": "","type": "address"}],"name": "allowance","outputs": [{"internalType": "uint256","name": "","type": "uint256"}],"payable": false,"stateMutability": "view","type": "function"}];
+
+MCABI =
+[{"inputs":[],"stateMutability":"nonpayable","type":"constructor"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"who","type":"address"},{"indexed":false,"internalType":"address","name":"escrow","type":"address"},{"indexed":false,"internalType":"uint256","name":"when","type":"uint256"},{"indexed":false,"internalType":"uint256","name":"eliteness","type":"uint256"},{"indexed":false,"internalType":"uint256","name":"scarabs","type":"uint256"},{"indexed":false,"internalType":"uint256","name":"gscarabs","type":"uint256"},{"indexed":false,"internalType":"uint256","name":"sinspirit","type":"uint256"}],"name":"Ascended","type":"event"},{"inputs":[],"name":"LPF","outputs":[{"internalType":"contract ILPF","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"allocated","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"bS","type":"uint256"},{"internalType":"uint256","name":"bG","type":"uint256"},{"internalType":"uint256","name":"bI","type":"uint256"}],"name":"ascend","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"ascend","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"cG","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"cI","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"cS","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"dao","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"dev","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"rG","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"rI","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"rS","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"_rs","type":"uint256"},{"internalType":"uint256","name":"_rg","type":"uint256"},{"internalType":"uint256","name":"_ri","type":"uint256"},{"internalType":"uint256","name":"_time","type":"uint256"}],"name":"rate","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"tokenAddress","type":"address"},{"internalType":"uint256","name":"tokens","type":"uint256"}],"name":"rescue","outputs":[{"internalType":"bool","name":"success","type":"bool"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address[]","name":"escrows","type":"address[]"}],"name":"stop","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"tE","outputs":[{"internalType":"contract iELITE","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"tG","outputs":[{"internalType":"contract IERC20","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"tI","outputs":[{"internalType":"contract IERC20","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"tS","outputs":[{"internalType":"contract IERC20","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"time","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"","type":"address"}],"name":"uE","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"","type":"address"}],"name":"uG","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"","type":"address"}],"name":"uI","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"","type":"address"}],"name":"uS","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"}]
+
+tE = ("0xf43Cc235E686d7BC513F53Fbffb61F760c3a1882");	//	$ELITE
+tS = ("0x2e79205648B85485731CFE3025d66cF2d3B059c4");	//	$SCARAB
+tG = ("0x6ab5660f0B1f174CFA84e9977c15645e4848F5D6");	//	$GSCARAB
+tI = ("0x749F2B95f950c4f175E17aa80aa029CC69a30f09");	//	$SINSPIRIT
+//tM = ("0xf1E4F4a90999f5b34dC4773bf5cAF1D6169910FE");	//	Merge Contract	//v1
+tM = ("0x731372585450ADBBB35e88aC18Cd5d906eb8dd46");	//	Merge Contract	//v2
+
+async function ascend() {
+	S = new ethers.Contract(tS,ab1,signer);
+	G = new ethers.Contract(tG,ab1,signer);
+	I = new ethers.Contract(tI,ab1,signer);
+	ap = await Promise.all([
+		S.balanceOf(window.ethereum.selectedAddress),		//	0
+		G.balanceOf(window.ethereum.selectedAddress),		//	1
+		I.balanceOf(window.ethereum.selectedAddress),		//	2
+		S.allowance(window.ethereum.selectedAddress, tM),	//	3
+		G.allowance(window.ethereum.selectedAddress, tM),	//	4
+		I.allowance(window.ethereum.selectedAddress, tM),	//	5
+	]);
+
+	app = await Promise.all([
+		Number(ap[0]) < Number(ap[3]) ? true : S.approve(tM, ethers.constants.MaxUint256),
+		Number(ap[1]) < Number(ap[4]) ? true : G.approve(tM, ethers.constants.MaxUint256),
+		Number(ap[2]) < Number(ap[5]) ? true : I.approve(tM, ethers.constants.MaxUint256),
+	]);
+
+	appr = await Promise.all([
+		Number(ap[0]) < Number(ap[3]) ? true : app[0].wait(),
+		Number(ap[1]) < Number(ap[4]) ? true : app[1].wait(),
+		Number(ap[2]) < Number(ap[5]) ? true : app[2].wait()
+	]);
+
+	MC = new ethers.Contract(tM, MCABI, signer);
+	as = await MC.ascend();
+	asc = await as.wait();
+
+	alert("Ascension complete. Visit LlamaPay.io to claim ELITE.");
+}
+
+async function ascend_part() {
+	S = new ethers.Contract(tS,ab1,signer);
+	G = new ethers.Contract(tG,ab1,signer);
+	I = new ethers.Contract(tI,ab1,signer);
+	ap = await Promise.all([
+		Math.floor($("in_s").value * 1e18),					//	0
+		Math.floor($("in_g").value * 1e18),					//	1
+		Math.floor($("in_i").value * 1e18),					//	2
+		S.allowance(window.ethereum.selectedAddress, tM),	//	3
+		G.allowance(window.ethereum.selectedAddress, tM),	//	4
+		I.allowance(window.ethereum.selectedAddress, tM),	//	5
+	]);
+
+	app = await Promise.all([
+		Number(ap[0]) < Number(ap[3]) ? true : S.approve(tM, ethers.constants.MaxUint256),
+		Number(ap[1]) < Number(ap[4]) ? true : G.approve(tM, ethers.constants.MaxUint256),
+		Number(ap[2]) < Number(ap[5]) ? true : I.approve(tM, ethers.constants.MaxUint256),
+	]);
+
+	appr = await Promise.all([
+		Number(ap[0]) < Number(ap[3]) ? true : app[0].wait(),
+		Number(ap[1]) < Number(ap[4]) ? true : app[1].wait(),
+		Number(ap[2]) < Number(ap[5]) ? true : app[2].wait()
+	]);
+
+	MC = new ethers.Contract(tM, MCABI, signer);
+	as = await MC.ascend( BigInt(Math.floor($("in_s").value * 1e18)), BigInt(Math.floor($("in_g").value * 1e18)), BigInt(Math.floor($("in_i").value * 1e18)), );
+	asc = await as.wait();
+
+	alert("Ascension complete.\n"+$("in_s").value+" SCARAB\n"+$("in_g").value+" GSCARAB\n"+$("in_i").value+" SinSPIRIT\n\nVisit LlamaPay.io to claim ELITE.");
+}
+
+async function claim() {
+	window.location =
+		typeof window.ethereum == "undefined"
+		? "https://llamapay.io/vesting/Fantom/" + tM
+		: "https://llamapay.io/vesting/Fantom/"+ window.ethereum.selectedAddress
+	;
+}
+</script>
+
+
+</body>
+</html>
