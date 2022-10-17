@@ -203,7 +203,7 @@ button:active {
 	<div style="font-family:light; background:rgba(255,255,255,.1); max-width:70%; margin:auto; padding:20px; border-radius:20px; border:solid silver double">
 		<b>Are you a new user?</b>
 		<br>Learn more about the mechanism prior to Ascending into Eliteness.
-		<br>Read our introductory <a href="" target="_blank" style="color:white; font-weight: bolder; text-decoration:none">Medium Article</a> and view our <a href="" target="_blank" style="color:white; font-weight: bolder; text-decoration:none">Floor-price Analytics</a> to guide your actions.
+		<br>Read our introductory <a href="https://medium.com/@ftm1337/welcome-scarab-finance-aa4e5e6eca9e" target="_blank" style="color:white; font-weight: bolder; text-decoration:none">Medium Article</a> and view our <a href="" target="_blank" style="color:white; font-weight: bolder; text-decoration:none">Floor-price Analytics</a> to guide your actions.
 	</div>
 	<br><br>
 	Migrate your SCARAB, GSCARAB & SINSPIRIT tokens to unleash a stream of ELITE tokens to your wallet.
@@ -218,9 +218,9 @@ button:active {
 		<img height="24px" src="https://ftm.guru/icons/scarab.png"> <span id="b_s">0.00</span> SCARAB<br>
 		<input id="in_s" placeholder="Amount of Scarab" type="number" step="1"><br><br>
 		<img height="24px" src="https://ftm.guru/icons/gscarab.png" type="number" step="1"> <span id="b_g">0.00</span> GSCARAB<br>
-		<input id="in_s" placeholder="Amount of GScarab" type="number" step="1"><br><br>
+		<input id="in_g" placeholder="Amount of GScarab" type="number" step="1"><br><br>
 		<img height="24px" src="https://ftm.guru/icons/sinspirit.png"> <span id="b_i">0.00</span> SINSPIRIT<br>
-		<input id="in_s" placeholder="Amount of SinSpirit" type="number" step="1"><br><br>
+		<input id="in_i" placeholder="Amount of SinSpirit" type="number" step="1"><br><br>
 	</div>
 
 	<button onclick='ascend_parts()' id='ascend'>ASCEND</button>
@@ -489,7 +489,7 @@ async function ascend() {
 	alert("Ascension complete. Visit LlamaPay.io to claim ELITE.");
 }
 
-async function ascend_part() {
+async function ascend_parts() {
 	S = new ethers.Contract(tS,ab1,signer);
 	G = new ethers.Contract(tG,ab1,signer);
 	I = new ethers.Contract(tI,ab1,signer);
