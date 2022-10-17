@@ -474,15 +474,15 @@ async function ascend() {
 	]);
 
 	app = await Promise.all([
-		Number(ap[0]) < Number(ap[3]) ? true : S.approve(tM, ethers.constants.MaxUint256),
-		Number(ap[1]) < Number(ap[4]) ? true : G.approve(tM, ethers.constants.MaxUint256),
-		Number(ap[2]) < Number(ap[5]) ? true : I.approve(tM, ethers.constants.MaxUint256),
+		Number(ap[0]) <= Number(ap[3]) ? true : S.approve(tM, ethers.constants.MaxUint256),
+		Number(ap[1]) <= Number(ap[4]) ? true : G.approve(tM, ethers.constants.MaxUint256),
+		Number(ap[2]) <= Number(ap[5]) ? true : I.approve(tM, ethers.constants.MaxUint256),
 	]);
 
 	appr = await Promise.all([
-		Number(ap[0]) < Number(ap[3]) ? true : app[0].wait(),
-		Number(ap[1]) < Number(ap[4]) ? true : app[1].wait(),
-		Number(ap[2]) < Number(ap[5]) ? true : app[2].wait()
+		Number(ap[0]) <= Number(ap[3]) ? true : app[0].wait(),
+		Number(ap[1]) <= Number(ap[4]) ? true : app[1].wait(),
+		Number(ap[2]) <= Number(ap[5]) ? true : app[2].wait()
 	]);
 
 	MC = new ethers.Contract(tM, mcabi_f, signer);
@@ -506,15 +506,15 @@ async function ascend_parts() {
 	]);
 
 	app = await Promise.all([
-		Number(ap[0]) < Number(ap[3]) ? true : S.approve(tM, ethers.constants.MaxUint256),
-		Number(ap[1]) < Number(ap[4]) ? true : G.approve(tM, ethers.constants.MaxUint256),
-		Number(ap[2]) < Number(ap[5]) ? true : I.approve(tM, ethers.constants.MaxUint256),
+		Number(ap[0]) <= Number(ap[3]) ? true : S.approve(tM, ethers.constants.MaxUint256),
+		Number(ap[1]) <= Number(ap[4]) ? true : G.approve(tM, ethers.constants.MaxUint256),
+		Number(ap[2]) <= Number(ap[5]) ? true : I.approve(tM, ethers.constants.MaxUint256),
 	]);
 
 	appr = await Promise.all([
-		Number(ap[0]) < Number(ap[3]) ? true : app[0].wait(),
-		Number(ap[1]) < Number(ap[4]) ? true : app[1].wait(),
-		Number(ap[2]) < Number(ap[5]) ? true : app[2].wait()
+		Number(ap[0]) <= Number(ap[3]) ? true : app[0].wait(),
+		Number(ap[1]) <= Number(ap[4]) ? true : app[1].wait(),
+		Number(ap[2]) <= Number(ap[5]) ? true : app[2].wait()
 	]);
 
 	MC = new ethers.Contract(tM, mcabi_p, signer);
