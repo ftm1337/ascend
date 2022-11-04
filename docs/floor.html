@@ -368,6 +368,8 @@ function paint(el,da,na,la,hi) {
         			grid: {
         				color: "#000"
         			},
+        			//type: 'logarithmic',
+        			//min: 0.007
         		}
     		},
     		interaction: {
@@ -424,9 +426,10 @@ async function paint25() {
 		step = 100e3;
 		imax = Math.floor((cbh-bbh)/step)
 	}
-	for(i=0;i< imax; i++) { TBH.push(bbh+i*step) }
+	for(i=0;i<= imax; i++) { TBH.push(bbh+i*step) }
+	if(TBH[TBH.length-1]!=cbh){TBH.push(cbh)}
 	pp = []
-	for(i=0;i< imax; i++) {
+	for(i=0;i< TBH.length; i++) {
 		pp[i] = PA.getAllPrices({blockTag:TBH[i]})
 	}
 	RPP = await Promise.all(pp);
@@ -443,7 +446,7 @@ async function paint25() {
 			9	spi
 		);
 	*/
-	for(i=0;i< imax; i++) {
+	for(i=0;i< TBH.length; i++) {
 		cd_s[0].push( [ Number(RPP[i][0])*1e3, Number(RPP[i][5])/1e18 ] )	//s.fp
 		cd_s[1].push( [ Number(RPP[i][0])*1e3, Number(RPP[i][2])/1e18 ] )	//s.cp
 		cd_s[2].push( [ Number(RPP[i][0])*1e3, Number(RPP[i][8])/1e18 ] )	//s.tp
