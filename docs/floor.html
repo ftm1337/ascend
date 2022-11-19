@@ -185,7 +185,7 @@ PAABI = [{"inputs":[],"name":"getAllPrices","outputs":[{"internalType":"uint256"
 
 
 function basetrip() {
-	provider = new ethers.providers.JsonRpcProvider("https://rpc.ftm.tools");
+	provider = new ethers.providers.JsonRpcProvider("https://rpc.ankr.com/fantom");
 	TG = new ethers.Contract("0x0786c3a78f5133f08c1c70953b8b10376bc6dcad", TGA, provider)
 	MC = new ethers.Contract("0x731372585450ADBBB35e88aC18Cd5d906eb8dd46", MCABI, provider)
 	PA = new ethers.Contract("0x0CD76cB6eBb020480Fc27812215dd4262910CD5c", PAABI, provider)
