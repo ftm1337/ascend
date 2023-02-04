@@ -421,6 +421,7 @@ async function paint25() {
 	bbh = 49800001;
 	cbh = await provider.getBlockNumber()
 	TBH = []
+	imax = 25;
 	step = Math.floor((cbh-bbh)/25)
 	if(step< 200e3) {
 		step = 100e3;
